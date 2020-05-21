@@ -6,11 +6,11 @@ from bookmark.models import Bookmark
 
 
 class BookmarkList(ListView):  # bookmark_list.html
-    models = Bookmark
+    model = Bookmark
 
 
 class BookmarkCreateView(CreateView):  # bookmark_form.html
     model = Bookmark
-    fields = ['site_name', 'url']
+    fields = ['site_name', 'url']   #<form>
     template_name_suffix = '_create'  # bookmark_create.html
     success_url = reverse_lazy('bookmark:list')
