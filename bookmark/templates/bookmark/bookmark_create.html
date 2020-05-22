@@ -5,10 +5,10 @@
     <title>Bookmark Add</title>
 </head>
 <body>
-<form action="" method="post"></form>
+<form method="post" action="">
     {% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Add bookmark">
-
+</form>
 </body>
 </html>

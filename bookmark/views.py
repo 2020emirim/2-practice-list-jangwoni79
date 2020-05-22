@@ -24,3 +24,5 @@ class BookmarkUpdateView(UpdateView):
     fields = ['site_name', 'url']   #<form>
     template_name_suffix = '_update' #bookmark_update.html
 
+
+
