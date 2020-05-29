@@ -2,12 +2,11 @@
 
 {% block title %}Add{% endblock %}
 
-
 {% block content %}
 <form method="post" action="">
     {% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Add bookmark">
-    <button onclick = "history.back()">Cancel</button>
+    <input type="submit" value="Add bookmark" class="btn btn-primary" btn-sm>
+    <button onclick = "history.back()" class = "btn btn-info" btn-sm>Cancel</button>
 </form>
 {% endblock %}
